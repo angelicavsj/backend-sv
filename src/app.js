@@ -19,6 +19,6 @@ app.use(morgan("dev"));
 //app.use('/', (req, res) => {
 //res.json("welcome")
 //})
-app.use(productsRoutes);
+
 app.use(grocersRoutes);
 module.exports = app;
