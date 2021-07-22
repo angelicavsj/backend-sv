@@ -3,7 +3,6 @@ const express = require("express");
 const cors = require("cors");
 const pkg = require("../package.json");
 const morgan = require("morgan");
-const productsRoutes = require("./routes/products.router");
 const grocersRoutes = require("./routes/grocers.router");
 
 const app = express();
