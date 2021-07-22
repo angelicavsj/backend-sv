@@ -4,6 +4,7 @@ const cors = require("cors");
 const pkg = require("../package.json");
 const morgan = require("morgan");
 const grocersRoutes = require("./routes/grocers.router");
+const productsRoutes = require ('./routes/products.router')
 
 const app = express();
 
@@ -19,6 +20,6 @@ app.use(morgan("dev"));
 //app.use('/', (req, res) => {
 //res.json("welcome")
 //})
-
+app.use(productsRoutes);
 app.use(grocersRoutes);
 module.exports = app;

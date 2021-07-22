@@ -1,20 +1,19 @@
+const  DataTypes = require ('sequelize')
 
-import { DataTypes } from 'sequelize'
-import db from '../data/database'
-
+const db = require('../data/database')
 
 const Products = db.define('products', {
 
     id: {
-        type: DataTypes.INTEGER
-
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
     },
 
     nameProducts: {
         type: DataTypes.STRING
 
     },
-
 
     description: {
         type: DataTypes.INTEGER
@@ -120,7 +119,6 @@ const Products = db.define('products', {
         type: DataTypes.INTEGER
     },
 
-
 })
 
-export default Products
+module.exports=Products
