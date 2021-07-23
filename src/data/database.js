@@ -1,7 +1,7 @@
 const {Sequelize} = require('sequelize')
-const sequelize = new Sequelize('superveci-dev', 'superveci-dev', '12345678Sv',{
+const sequelize = new Sequelize('pruebaSv', 'prueba-sv', '12345678Sv',{
   dialect:'mssql',
-  host:'superveci-dev.database.windows.net',
+  host:'prueba-vs.database.windows.net',
 })
     
 //test connection

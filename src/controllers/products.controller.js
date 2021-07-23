@@ -1,27 +1,22 @@
 const Products = require ('../models/products.js')
 
-const getProduts = async  ( req, res, next) => {
-    
-try {
-    
+// get all products
+const getProduts = async  ( req, res, next) => { 
+try {   
 const products = await Products.findAll()
-
 res.status(201).json({products})
 
 } catch (error) {
     console.log(error)
- next()   
+    next()   
+}
 }
 
-}
-
-const getByIdProducts =async (req, res, next) => {
-
+//get product per id
+const getByIdProducts = async (req, res, next) => {
 try {
-    const {id} =req.params
-
-    const product = await Products.findByPk(id)
-
+    const {Id} =req.params
+    const product = await Products.findByPk(Id)
     res.status(2001).json({product})
 
 } catch (error) {
@@ -30,14 +25,15 @@ try {
 }
 }
 
-const createProducts =async (req, res, next) => {
+// create product
+const createProducts = async (req, res, next) => {
     const { body } = req
 
 try {
+//method create product
     const product = new Products(body)
     await product.save()
-
-    res.status(201).json({mesage: 'se agrego nuevo producto'}, )  
+    res.status(201).json({mesage:'producto agregado con exito'},)  
 
 } catch (error) {
     console.log(error)
@@ -45,19 +41,18 @@ try {
     next()
 }
 }
- 
-
-
- const updateProducts =async (req, res) => {
+ //updateProducts
+const updateProducts = async (req, res) => {
 try {
     
+
 } catch (error) {
     console.log(error)
     next()
 }
 }
 
-const deleteProducts =async (req, res) => {
+const deleteProducts = async (req, res) => {
 try {
     
 } catch (error) {
