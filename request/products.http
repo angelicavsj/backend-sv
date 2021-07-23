@@ -1,2 +1,32 @@
-### get all grocers
-GET  http://localhost:8000/api/products/products
+### get products
+GET  http://localhost:8000/products
+
+### create product
+POST  http://localhost:8000/products/create
+Content-Type: application/json 
+
+{
+
+     "nameProduct":"cafe de prueba09fdfgfg-",
+        "description":"esta es una prugfeba3",
+        "code":33656574,
+        "barcode":3435465645,      
+        "cost":50036550,
+        "netPrice":345946534,
+        "marginOfGain":33650,
+        "IVA":3680,
+        "finalPrice":435656500,
+        "img":"m45565j3n",
+        "initialInventory":3955,
+        "storageType":456533,
+        "packaging":"F46538F",
+        "unit":"Po366565RIA",
+        "dueData":"2021-07-25",
+        "lot":"fd3f9",
+        "weight":33654430.7,
+        "high":45465330.7,
+        "width":346533.7,
+        "winery":46532,
+        "locationInWinery":1361.6,
+        "statusProduct":5653
+}

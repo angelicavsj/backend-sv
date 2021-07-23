@@ -31,21 +31,21 @@ POST http://localhost:8000/grocer/create
 Content-Type: application/json
 
 {
-    "grocerName": "Prueba error",
-    "ownerName": "Prueba error",
+    "grocerName": "Prueba error2",
+    "ownerName": "Prueba error2",
     "documentType": "cedula de ciudadania",
-    "documentId": 1234234203,
-    "cellphone": 2999999999,
-    "phone": 5678905,
-    "email": "good@example.com",
-    "address": "CRA 45 # 15-15, Bogota, Colombia",
-    "neighborhood": "Suba",
-    "locality" : "Suba",
-    "zone" : 1,
-    "latitude": 4.15,
-    "longitude": -7.68,
-    "sellerCreator": 30,
-    "addressAdditionalInfo": "En la esquina"
+    "documentId": 35980858,
+    "cellphone": 3197347137,
+    "phone": 5678705,
+    "email": "goodP@example.com",
+    "address": "CRA 45 # 15-14, Bogota, Colombia",
+    "neighborhood": "CHAPINER",
+    "locality" : "CHAPINERO",
+    "zone" : 2,
+    "latitude": 3.15,
+    "longitude": -4.68,
+    "sellerCreator": 20,
+    "addressAdditionalInfo": "En la esquina.."
 }
 
 ### delete grocer

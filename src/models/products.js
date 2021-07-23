@@ -1,124 +1,135 @@
-const  DataTypes = require ('sequelize')
+const Sequalize = require('sequelize');
 
 const db = require('../data/database')
 
 const Products = db.define('products', {
 
     id: {
-        type: DataTypes.INTEGER,
+        type: Sequalize.INTEGER,
+        unique:true,
         primaryKey: true,
         autoIncrement: true,
     },
 
     nameProducts: {
-        type: DataTypes.STRING
-
+        type:Sequalize.CHAR,
+        unique :  true,
+        allowNull: true
     },
 
     description: {
-        type: DataTypes.INTEGER
-
+        type: Sequalize.CHAR,
+        allowNull: true
     },
 
     code: {
-        type: DataTypes.INTEGER
+        type:Sequalize.INTEGER,
+        unique :  true,
+        allowNull: true
 
     },
 
     barCode: {
-        type: DataTypes.INTEGER
+        type: Sequalize.INTEGER,
+        unique :  true,
+        allowNull: true
 
     },
 
     cost: {
-        type: DataTypes.FLOAT
+        type: Sequalize.FLOAT,
+        allowNull:true
 
     },
 
     netPrice: {
-        type: DataTypes.FLOAT
+        type:Sequalize.FLOAT,
+        allowNull: true
 
     },
 
     marginOfGain: {
-        type: DataTypes.FLOAT
-
+        type:Sequalize.FLOAT,
+        allowNull:true
     },
 
     IVA: {
-        type: DataTypes.INTEGER
+        type: Sequalize.INTEGER,
+        allowNull:true
 
     },
 
     finalPrice: {
-        type: DataTypes.FLOAT
-
+        type:Sequalize.FLOAT,
+        allowNull: true
     },
 
     imgProduct: {
-        type: DataTypes.STRING
-
+        type: Sequalize.STRING,
+        allowNull: true
     },
 
     initialInventory: {
-        type: DataTypes.INTEGER
-
+        type:Sequalize.INTEGER,
+        allowNull: true
     },
 
     storageType: {
-        type: DataTypes.INTEGER
+        type: Sequalize.INTEGER,  
 
     },
 
     packaging: {
-        type: DataTypes.STRING
-
+        type: Sequalize.STRING,
+       
     },
 
     unit: {
-        type: DataTypes.STRING
+        type: Sequalize.STRING
 
     },
 
     dueData: {
-        type: DataTypes.DATE
-
+        type:Sequalize.DATE,
+        allowNull: true
     },
 
     log: {
-        type: DataTypes.FLOAT
+        type: Sequalize.FLOAT
 
     },
 
     weight: {
-        type: DataTypes.FLOAT
+        type: Sequalize.FLOAT
 
     },
 
     high: {
-        type: DataTypes.FLOAT
+        type:Sequalize.FLOAT
 
     },
 
     widht: {
-        type: DataTypes.FLOAT
+        type:Sequalize.FLOAT
 
     },
 
     winery: {
-        type: DataTypes.INTEGER
-
+        type:Sequalize.INTEGER,
+        allowNull: true
     },
 
     locationInwinery: {
-        type: DataTypes.FLOAT
+        type:Sequalize.FLOAT,
+        allowNull: true
 
     },
 
     statusProduct:{
-        type: DataTypes.INTEGER
+        type:Sequalize.INTEGER,
+        allowNull: true
     },
 
 })
 
-module.exports=Products
+module.exports= Products
