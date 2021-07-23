@@ -3,18 +3,18 @@ POST http://localhost:8000/supplier/create
 Content-Type: application/json
 
 {
-    "name": "Proveedor 2",
+    "name": "Proveedor 3",
     "documentType": "NIT",
     "documentId": 12498752452,
-    "cellphone": 3124925344,
-    "phone": 5678905,
-    "email": "supplier2@example.com",
-    "address": "CRA 25 # 16-15, Bogota, Colombia",
-    "addressAdditionalInfo": "En la esquina",
-    "neighborhood": "Suba",
-    "locality" : "Suba",
+    "cellphone": 3124925346,
+    "phone": 5678955,
+    "email": "supplier3@example.com",
+    "address": "CRA 25 # 16-14, Bogota, Colombia",
+    "addressAdditionalInfo": "En la esquina.",
+    "neighborhood": "Suba1",
+    "locality" : "Suba1",
     "city" : "Bogota",
-    "siigoId" : 1
+    "siigoId" : 4
 }
 
 ### get supplier by id

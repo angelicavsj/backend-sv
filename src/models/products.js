@@ -11,7 +11,7 @@ const Products = db.define('products', {
         autoIncrement: true,
     },
 
-    nameProducts: {
+    name : {
         type:Sequalize.CHAR,
         unique :  true,
         allowNull: true
@@ -33,7 +33,6 @@ const Products = db.define('products', {
         type: Sequalize.INTEGER,
         unique :  true,
         allowNull: true
-
     },
 
     cost: {
@@ -127,6 +126,16 @@ const Products = db.define('products', {
 
     statusProduct:{
         type:Sequalize.INTEGER,
+        allowNull: true
+    },
+
+   line:{
+        type:Sequalize.STRING,
+        allowNull: true
+    },
+
+    rotation:{
+        type:Sequalize.STRING,
         allowNull: true
     },
 

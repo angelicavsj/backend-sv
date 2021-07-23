@@ -28,7 +28,7 @@ try {
 // create product
 const createProducts = async (req, res, next) => {
     const { body } = req
-
+console.log(req.body);
 try {
 //method create product
     const product = new Products(body)

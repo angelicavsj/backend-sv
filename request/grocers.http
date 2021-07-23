@@ -34,18 +34,18 @@ Content-Type: application/json
     "grocerName": "Prueba cinco",
     "ownerName": "Prueba cinco",
     "documentType": "cedula de ciudadania",
-    "documentId": 123234234203,
-    "cellphone": 3124325344,
-    "phone": 5678905,
-    "email": "nice@example.com",
-    "address": "CRA 35 # 15-15, Bogota, Colombia",
-    "neighborhood": "Suba",
-    "locality" : "Suba",
-    "zone" : 1,
-    "latitude": 4.15,
-    "longitude": -7.68,
-    "sellerCreator": 30,
-    "addressAdditionalInfo": "En la esquina"
+    "documentId": 34678858,
+    "cellphone": 3154678900,
+    "phone": 6961090,
+    "email": "test@example.com",
+    "address": "CRA 35 # 15-09, Bogota, Colombia",
+    "neighborhood": "chapinero",
+    "locality" : "chapinero",
+    "zone" : 2,
+    "latitude": 3.15,
+    "longitude": -5.68,
+    "sellerCreator": 20,
+    "addressAdditionalInfo": "a una cuadra"
 }
 
 ### delete grocer
