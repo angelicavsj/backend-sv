@@ -45,7 +45,6 @@ try {
 const updateProducts = async (req, res) => {
 try {
     
-
 } catch (error) {
     console.log(error)
     next()
@@ -61,7 +60,7 @@ try {
 }
 }
 
-module.exports={
+module.exports = {
 getByIdProducts,
 getProduts,
 createProducts,

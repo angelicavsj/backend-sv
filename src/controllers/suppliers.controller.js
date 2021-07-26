@@ -1,6 +1,5 @@
 const Suppliers = require("../models/Suppliers");
 
-
 // Method for getting suppliers from DB
 exports.suppliersGet = async (req, res) => {
 
